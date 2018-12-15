@@ -7,9 +7,8 @@
 #include "util.hpp"
 
 
-class CanEncoderSend :public CanClassBase,public Enc{
+class CanEncNode :public CanClassBase,public Enc{
 private:
-	Enc *enc;
 	int id;
 	int Mode;
 	int CountMemory;

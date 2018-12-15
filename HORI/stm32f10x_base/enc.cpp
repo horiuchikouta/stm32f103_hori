@@ -39,6 +39,12 @@ int Enc::setup(){
 	return i;
 }
 
+void Enc::direction(){
+	if(dir=1)dir=0;
+	else dir=1;
+}
+
+
 //read--------------------------
 s32 Enc::readCount(){
 	if(mode==ENC_RUN) return (encTim->CNT+count*65536);

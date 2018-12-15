@@ -12,6 +12,8 @@ public:
 	void set(GPIO_TypeDef* port1,u16 pin1,GPIO_TypeDef* port2,u16 pin2,TIM_TypeDef *tim);
 	int setup();
 
+	void direction();//‰ñ“]•ûŒü•ÏX
+
 	//read--------------------------
 	s32 readCount();
 

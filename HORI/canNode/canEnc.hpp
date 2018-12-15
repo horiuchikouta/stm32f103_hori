@@ -4,21 +4,30 @@
 #include "can.hpp"
 #include "enc.hpp"
 
-class CanEncoder:public CanHandler,public Encoder{
+#define CANID_ENC 0x440 //
+
+class CanEnc:public CanClassBase,public Enc{
 private:
-	int number;
 	int encValue;
-	unsigned short frequency;
-	long lastGetTimeData;
-	int id;
+	unsigned short frequency;//0 or 1~65535
+
+
 public:
-	CanEncoder(Can &can,int number);
-	CanEncoder(Can &can,int number,unsigned short frequencyMillisArg);
+	//--------------------------------
+	CanEnc(Can &can,int idNum);
+	CanEnc(Can &can,int idNum,unsigned short frequencyMillisArg);
 	int setup();
 	int count();
 	long lastReadTime();
-	int canRead(int id,int number,unsigned char data[8]);
-	int canId(int id);
+
+	//canbase-----------------------------
+	//void setCan(Can can,u16 idNum);
+	//int setUpCan();
+	////can function--------------------------
+	int canId(u16 id);
+	void canRead(u16 id,u8 length,u8 data[8]);
+
+
 };
 
 

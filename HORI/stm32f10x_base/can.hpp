@@ -51,16 +51,22 @@ private:
 ////////////////////////↑Can↓CanClassBase////////////////////////////
 
 class CanClassBase {
+private:
 public:
 	//setup--------------------------
-	virtual void setCan(Can can,u16 id)=0;
-	virtual int setUpCan()=0;
+	//virtual void setCan(Can can)=0;
+	//virtual int setUpCan()=0;
 
 	//can function--------------------------
 	virtual int canId(u16 id)=0;
 	virtual void canRead(u16 id,u8 length,u8 data[8])=0;
+
 protected:
-	Can* can;
+	Can* canClass;
+
+	int id; //全体のid
+	int idNum; //クラスナンバー
+	long lastGetTimeData; //最後に受け取った時間
 };
 ////////////////////////Interrupt////////////////////////////
 

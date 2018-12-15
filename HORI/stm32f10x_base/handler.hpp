@@ -4,13 +4,13 @@
 #include "stm32f10x.h"
 //#include "main.hpp"
 
-//#include "adc.hpp"
-//#include "can.hpp"
-//#include "enc.hpp"
+#include "adc.hpp"
+#include "can.hpp"
+#include "enc.hpp"
 #include "gpio.hpp"
-//#include "pwm.hpp"
+#include "pwm.hpp"
 #include "system.hpp"
-//#include "tim.hpp"
+#include "tim.hpp"
 #include "usart.hpp"
 
 

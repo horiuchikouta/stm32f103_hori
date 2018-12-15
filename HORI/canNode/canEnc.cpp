@@ -5,22 +5,26 @@
 #include "system.hpp"
 
 
-CanEncoder::CanEncoder(Can &can,int number){
-	id=0x440+number;
+CanEnc::CanEnc(Can &can,int idNum){
+	canClass = &can;
+	id=CANID_ENC+idNum;
 	lastGetTimeData=millis();
-	frequency=65535;
-	can.addHandler(this);
+	frequency=0;
+	canClass.setCanHandler(this);
 }
 
-CanEncoder::CanEncoder(Can &can,int number,unsigned short frequencyArg){
-	id=0x440+number;
+CanEnc::CanEncoder(Can &can,int number,unsigned short frequencyArg){
+	canClass = &can;
+
+	id=CANID_ENC+number;
 	lastGetTimeData=millis();
 	frequency=frequencyArg;
-	can.addHandler(this);
+	canClass.setCanHandler(this);
 }
 
-int CanEncoder::setup(){
-	if(canSetup()) return 1;
+int CanEnc::setup(){
+	if(canClass->setup()) return 1;
+	if(setup()) return 1;
 	unsigned char data[8];
 	canSetId(id);
 	data[0]=0;
@@ -28,33 +32,39 @@ int CanEncoder::setup(){
 	data[0]=1;
 	ushort_to_uchar2(data+1,frequency);
 	canWrite(id-0x040,3,data);
-	encValue=0;
-	lastGetTimeData=millis();
+	//encValue=0;
+	lastGetTimeData = millis();
 	return 0;
 }
 
-int CanEncoder::count(){
-	if(frequency==65535){
+int CanEnc::count(){
+	/*if(frequency == 0){
 		unsigned char data[8];
-		long lastTime=lastGetTimeData;
+		long lastTime = lastGetTimeData;
 		canWrite(id,0,data);
 		while(lastTime==lastGetTimeData);
-	}
-	if(revFlag)return -encValue;
+	}*/
+	if(dir)return -encValue;
 	else return encValue;
 }
 
-long CanEncoder::lastReadTime(){
+long CanEnc::lastReadTime(){
 	return lastGetTimeData;
 }
 
-int CanEncoder::canRead(int id,int number,unsigned char data[8]){
+//--------------------------------------------
+/*void CanEnc::setCan(Can can,u16 idNum){
+	canCan=can;
+}*/
+
+////
+void CanEnc::canRead(int id,int number,unsigned char data[8]){
 	encValue=uchar4_to_int(data);
 	lastGetTimeData=millis();
 	return 0;
 }
 
-int CanEncoder::canId(int id){
-	return id==this->id;
+int CanEnc::canId(int id){
+	return id == this->id;
 }
 
