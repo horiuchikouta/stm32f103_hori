@@ -1,0 +1,187 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I..\..\..\..\..\Users\kouta\Desktop\stm32f103\HORI\util /I..\..\..\..\..\Users\kouta\Desktop\stm32f103\cmsis /I..\..\..\..\..\Users\kouta\Desktop\stm32f103\cmsis_boot /I..\..\..\..\..\Users\kouta\Desktop\stm32f103\stm_lib\inc /I..\..\..\..\..\Users\kouta\Desktop\stm32f103 /I..\..\..\..\..\Users\kouta\Desktop\stm32f103\stm_lib /I..\..\..\..\..\Users\kouta\Desktop\stm32f103\HORI\stm32f10x_base /I..\..\..\..\..\Users\kouta\Desktop\stm32f103\HORI /I..\..\..\..\..\Users\kouta\Desktop">
+      <source file="..\..\..\HORI\stm32f10x_base\gpio.hpp" lastModified="167ac104926">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm3.h" lastModified="167ac104d7a">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_i2c.c" lastModified="167ac104dfb">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_i2c.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_spi.c" lastModified="167ac104e0b">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_spi.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\system.cpp" lastModified="167ac104952">
+         <include file="..\..\..\HORI\stm32f10x_base\system.hpp"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_rcc.h" lastModified="167ac104d56">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_exti.c" lastModified="167ac104de9">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_exti.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_can.h" lastModified="167ac104ce6">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_gpio.c" lastModified="167ac104df2">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_adc.h" lastModified="167ac104cdd">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.h" lastModified="167ac104a10">
+      </source>
+      <source file="..\..\..\HORI\util\util.hpp" lastModified="167ac105152">
+         <include file="..\..\..\HORI\util\util.h"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\can.hpp" lastModified="162aab056ed">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\HORI\util\util.hpp"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f10x.c" lastModified="167ac104a02">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_dma.h" lastModified="167ac104d3c">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x_conf.h" lastModified="167ac1049f2">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_adc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_can.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_dma.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_gpio.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_i2c.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_spi.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_tim.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\HORI\util\utilplus.cpp" lastModified="167ac104d71">
+         <include file="..\..\..\HORI\util\util.hpp"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\misc.c" lastModified="167ac104d72">
+         <include file="..\..\..\stm_lib\inc\misc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="167ac105169">
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_usart.h" lastModified="167ac104d69">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\adc.cpp" lastModified="162c9012758">
+         <include file="..\..\..\HORI\stm32f10x_base\adc.hpp"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\usart.hpp" lastModified="167ac105136">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\HORI\util\util.hpp"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f10x_md.c" lastModified="167ac1049ce">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_tim.c" lastModified="167ac104e0d">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_tim.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_usart.c" lastModified="167ac104e15">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_usart.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_i2c.h" lastModified="167ac104d4e">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\main.cpp" lastModified="167ac104a1d">
+         <include file="..\..\..\main.hpp"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_spi.h" lastModified="167ac104d5f">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\handler.cpp" lastModified="167ac10492e">
+         <include file="..\..\..\HORI\stm32f10x_base\handler.hpp"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\pwm.cpp" lastModified="167ac10493c">
+         <include file="..\..\..\HORI\stm32f10x_base\pwm.hpp"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\misc.h" lastModified="167ac104cd3">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\system.hpp" lastModified="167ac104959">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\syscalls\syscalls.c" lastModified="167ac105dbd">
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="167ac105171">
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\gpio.cpp" lastModified="167ac10491f">
+         <include file="..\..\..\HORI\stm32f10x_base\gpio.hpp"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_rcc.c" lastModified="167ac104e04">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f10x.h" lastModified="167ac104dce">
+         <include file="..\..\..\cmsis\core_cm3.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f10x.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f10x_conf.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_can.c" lastModified="167ac104dda">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_can.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\HORI\util\util.h" lastModified="167ac10497b">
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_adc.c" lastModified="167ac104dae">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_adc.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\HORI\util\util.c" lastModified="167ac105144">
+         <include file="..\..\..\HORI\util\util.h"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\adc.hpp" lastModified="162c901279f">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\can.cpp" lastModified="1629f874168">
+         <include file="..\..\..\HORI\stm32f10x_base\can.hpp"/>
+         <include file="..\..\..\HORI\stm32f10x_base\usart.hpp"/>
+      </source>
+      <source file="..\..\..\stm_lib\src\stm32f10x_dma.c" lastModified="167ac104de2">
+         <include file="..\..\..\stm_lib\inc\stm32f10x_dma.h"/>
+         <include file="..\..\..\stm_lib\inc\stm32f10x_rcc.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_exti.h" lastModified="167ac104d3e">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_gpio.h" lastModified="167ac104d46">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\stm_lib\inc\stm32f10x_tim.h" lastModified="167ac104d61">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+      </source>
+      <source file="..\..\..\main.hpp" lastModified="167ac1d1649">
+         <include file="..\..\..\HORI\stm32f10x_base\adc.hpp"/>
+         <include file="..\..\..\HORI\stm32f10x_base\can.hpp"/>
+         <include file="..\..\..\HORI\stm32f10x_base\enc.hpp"/>
+         <include file="..\..\..\HORI\stm32f10x_base\gpio.hpp"/>
+         <include file="..\..\..\HORI\stm32f10x_base\handler.hpp"/>
+         <include file="..\..\..\HORI\stm32f10x_base\pwm.hpp"/>
+         <include file="..\..\..\HORI\stm32f10x_base\system.hpp"/>
+         <include file="..\..\..\HORI\stm32f10x_base\tim.hpp"/>
+         <include file="..\..\..\HORI\stm32f10x_base\usart.hpp"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\handler.hpp" lastModified="167ac1f04a2">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\HORI\stm32f10x_base\gpio.hpp"/>
+         <include file="..\..\..\HORI\stm32f10x_base\system.hpp"/>
+         <include file="..\..\..\HORI\stm32f10x_base\usart.hpp"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\pwm.hpp" lastModified="167ac104944">
+         <include file="..\..\..\cmsis_boot\stm32f10x.h"/>
+         <include file="..\..\..\HORI\stm32f10x_base\handler.hpp"/>
+      </source>
+      <source file="..\..\..\HORI\stm32f10x_base\usart.cpp" lastModified="167ac104960">
+         <include file="..\..\..\HORI\stm32f10x_base\usart.hpp"/>
+      </source>
+   </includePath>
+</dependencies>
